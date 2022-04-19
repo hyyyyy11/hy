@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-image: url(./image/ring-system-planet-surface-mountain-hill-birds-space.jpeg);
+            }
+            
+            
+            .shangbiao{
+                padding: 10px ;
+                float: left;
+
+            }
+            img{
+                float: left;
+               margin: auto;
+                width: 50px;
+                height: 50px;
+                padding: 10px 10px 10px 10px;
+                
+            }
+            p{
+                float: left;
+                height: 50px;
+                padding:24px 10px 10px 10px ;
+                
+            }
+            
+
+       
+            
+            
+            
+            *{
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                font-size: 20px;
+            }
+            body{
+                height: 100vh;
+                display: flex;
+                align-content: center;
+
+            }
+            .shell{
+                display: flex;
+                justify-content: center;
+            }
+            .button{
+                width: 100px;
+                height: 65px;
+                text-align: center;
+                line-height: 65px;
+                transition: 0.3s;
+
+            }
+            .button:hover{
+                background-color: aquamarine;
+
+            }
+            .button li:hover{
+                background-color: cornflowerblue;
+
+            }
+            .button ul li{
+                height: 0;
+                transition: 0.2s;
+                opacity: 0;
+                transform: translateY(-65px);
+            }
+            .button:hover li{
+                height: 65px;
+                opacity: 1;
+                transform: translateY(0);
+            }
+            a{
+                color: black;
+                text-decoration: none;
+            }
+            a:hover{
+                color: white;
+            }
+            .search{
+                position: relative;
+                width: 500px;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-top: 40vh;
+
+            }
+            .search input{
+                position: relative;
+                width: 100%;
+                height: 100%;
+                border: none;
+                padding: 10px 25px;
+                outline: none;
+                font-size: 1.1em;
+                color: #555;
+                border-radius: 5px 0px 0px 5px ;
+                
+            }
+            .search ul li{
+                background-color: white;
+                height: 50px;
+                width: 60px;
+                text-align: center;
+                background-image: url(./image/放大镜.png);
+                background-size: 40px 40px;
+                background-repeat: no-repeat;
+                background-position: 5px;
+                background-position-x:10px ;
+                border-radius: 0px 5px 5px 0px ;
+                
+            }
+            .search ul li:hover{
+                background-color: white;
+            }
+            
+        </style>
+
+    </head>
+    <body>
+        
+            <div>
+                <img src="./image/weiruan.jpeg" alt="图片">
+                <p style="font-size: 20px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Microsoft Bing</p>
+                <ul class="shell">
+                    <a href=""><li class="button"><span>picture</span></li></a>
+                    <a href=""><li class="button"><span>Video</span></li></a>
+                    <a href=""><li class="button"><span>More</span>
+                    <ul>
+                        <a href=""><li>list1</li></a>
+                        <a href=""><li>list2</li></a>
+                        <a href=""><li>list3</li></a>
+                    </ul>
+                    </li></a>
+                    
+
+                </ul>
+                
+            </div>
+            <div class="search">
+                
+                <input type="search" >
+                <ul><a href=""><li class="button"></li></a></ul>
+               
+                
+            </div>
+
+    </body>
+</html>
