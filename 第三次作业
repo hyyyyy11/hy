@@ -1,0 +1,58 @@
+<html>
+    <head>
+     <style>
+         button{
+             width: 200px;
+             height: 50px;
+             margin: auto;
+             align-items: center;
+             justify-content: center;
+             position: relative;
+             display: flex;
+         }
+         #demo{
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             margin-top: 30%;
+             position: relative;
+             font-size: x-large;
+         }
+     </style>
+    </head>
+    <body>
+        
+        <div id="demo">time passed: <span id="a" style="color: red;"></span>s</div>
+        <button id="b" onclick="timing()">start</button>
+        <script>
+            var div=document.getElementById("demo")
+            var span=document.getElementById("a")
+            var button=document.getElementById("b")
+            var i=0
+            var bt=0
+            var times
+            function timing(){
+                if(bt==0){
+                    times=setInterval(update,1000)
+                    button.innerHTML="stop"
+                    bt=1
+
+                }else{
+                    clearInterval(times)
+                    
+                    button.innerHTML="continue"
+                    bt=0
+                }
+                
+
+
+            }
+            function update(){
+                var j=i+1
+                i=j
+                span.innerHTML=j
+                
+            }
+        </script>
+    </body>
+</html>
