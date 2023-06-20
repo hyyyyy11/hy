@@ -1,0 +1,54 @@
+css
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;  
+}
+
+.header {
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+  position: fixed;
+  top: 0;   
+}
+
+.nav {
+  display: flex;   margin-left: 20px;    
+}
+
+.nav li {
+  list-style: none;
+  margin: 0 10px;  
+}  
+
+.nav li select {
+  height: 30px;
+  font-size: 16px; 
+  padding-left: 10px; 
+}   
+
+.nav a, option {
+  color: #0067b8;
+  text-decoration: none;  
+}  
+
+.search_box {
+  height: 40px;
+  width: 600px;    
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  display: flex;
+  align-items: center; 
+  overflow: hidden;     
+  margin: 20px auto;  
+  transition: width 0.5s;   
+}  
+
+.search_box:hover {
+  width: 800px; 
+}
+
